@@ -1,0 +1,14 @@
+<div class="navbar-spacer"></div>
+<nav class="navbar">
+  <div class="container">
+    <ul class="navbar-list">
+      {% for item in site.data.pages %}
+        <li class="navbar-item">
+          <a href="{{ item.url }}" class="navbar-link{% if page.url == item.url %} active{% endif %}">
+            {{ item.title }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,51 @@
+- title: Python Developer
+  company: HireVergence LLC/Optiv/Starbucks HQ
+  date1: 2019
+  date2: 2020
+  summary: >
+    Internal website interface on top of Illumio network security management API. Python Django to Flask, SQLite to MySQL
+    migration, Connexion, SQLAlchemy, Marshmallow OpenAPI REST API, React and Redux for front-end development.
+    Pytest, Jest, Jenkins, Docker CI/CD testing and deploment using Github Enterprise and Jira. Agile and code reviews.
+- title: Sr Software Engineer II
+  company: Bank of the West
+  date1: 2013
+  date2: 2020
+  summary: >
+    Customer leads generation and distribution for digital, ATM, e-mail, direct mail, branch and call center. Python, PETL,
+    Redhat Linux, Oracle and Teradata RDBMS integration to BNP Paribas-supplied Java application. Python Flask with
+    Jquery XML REST API integration to FISGlobal Touchpoint. Wrote Java stored procedures for enhanced encryption.
+    Worked on several migration and enhancement projects. Reporting systems with Splunk, Informatica and SAP BODI.
+    SOAP and REST APIs. Managed QA and production releases using GIT and Subversion. Created an internal “pypi”
+    repository to store approved and internal Python packages. Worked on project to perform ETL tasks using Hadoop,
+    PySpark, pig, pydoop, kafka and sqoop.
+- title: Sr. Software Engineer
+  company: Ricoh EWS
+  date1: 2011
+  date2: 2013
+  summary: >
+    Developed middleware features for e-paper Android tablet. Managing WiFi and Bluetooth connections, interfacing to
+    barcode scanners and printers, generating keyboard layouts. Python, ZeroMQ, dbus, ctypes integration with “inotify”
+    system service to watch files. Git, nose for source code management and testing. Agile, scrum and code reviews.
+- title: Managing Director, Tech Lead
+  company: GISCOM Sdn Bhd
+  date1: 2007
+  date2: 2010
+  summary: >
+    Managed staff of 4. Created project proposals for Brunei government projects. Won 2009 BICTA special mention 2009
+    APICTA. Python, jQuery, MySQL, Oracle databases. Google Maps, qgis, HTML, CSS, jQuery web front end. Mobile
+    web apps. GPS and AIS tracking apps.
+- title: Database Engineer
+  company: Siemens Pvt. Ltd.
+  date1: 2003
+  date2: 2006
+  summary: >
+    Worked on “NetMinister” project to deploy Siemens GIS application to track phone landlines in Brunei. C++, Visual Basic
+    6, Oracle PL/SQL and SQL. Python utilities.
+- title: Principal Technical Analyst
+  company: Oracle Corp.
+  date1: 1989
+  date2: 2003
+  summary: >
+    Oracle Applications, Oracle Book, Oracle SupportNotes developer (working up from tech support). Java, PL/SQL, C,
+    (Oracle RDBMS Core development), C++, NLS internationalization. SGML and XML. Utilities and web servers in
+    Python, Perl, C. Windows, Mac and Solaris porting.

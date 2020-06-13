@@ -1,0 +1,6 @@
+<h4>Skills</h4>
+{% for skill in site.data.skills %}
+  <div class="skill-prof" style="width: {{skill.prof}}%;">
+    {{ skill.skill }} ({{ skill.prof }}%)
+  </div>
+{% endfor %}

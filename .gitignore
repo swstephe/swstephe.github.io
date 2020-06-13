@@ -1,3 +1,7 @@
 *.swp
 *.pyc
 .idea
+
+_site
+.sass-cache
+.jekyll-metadata
