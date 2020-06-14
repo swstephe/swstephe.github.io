@@ -1,8 +1,12 @@
 - url: /
   title: Home
+  category: home
 - url: /projects
   title: Projects
+  category: projects
 - url: /blog
   title: Blog
+  category: blog
 - url: /about
   title: About
+  category: about

@@ -1,10 +1,15 @@
 <div class="navbar-spacer"></div>
+<div class="mobile-menu">
+  <div class="container">
+    <img class="u-pull-right" src="/static/icons/hamburger.svg" alt="menu" onclick="javascript: toggleNavMenu()">
+  </div>
+</div>
 <nav class="navbar">
   <div class="container">
     <ul class="navbar-list">
       {% for item in site.data.pages %}
         <li class="navbar-item">
-          <a href="{{ item.url }}" class="navbar-link{% if page.url == item.url %} active{% endif %}">
+          <a href="{{ item.url }}" class="navbar-link{% if item.category == page.category %} active{% endif %}">
             {{ item.title }}
           </a>
         </li>

@@ -1,8 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
-order: 2
+category: about
 ---
 
 I am a software engineer with 30 years of experience.

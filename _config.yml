@@ -45,3 +45,7 @@ plugins:
 collections:
   projects:
     output: true
+    category: projects
+  posts:
+    output: true
+    category: blog

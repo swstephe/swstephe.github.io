@@ -1,6 +1,7 @@
 ---
 title: algorithms
 layout: default
+category: projects
 ---
 
 algorithm practice
