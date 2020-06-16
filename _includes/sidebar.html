@@ -11,51 +11,19 @@
     </tr>
   </table>
   <table class="sidebar-section">
-    <tr><td>
-      <a href="mailto:scott@nuruq.com">
-        <img src="/static/icons/email.svg" alt="email" />
-      </a>
-    </td><td>
-      <a href="mailto:scott@nuruq.com">
-        scott@nuruq.com
-      </a>
-    </td></tr>
-    <tr><td>
-      <a href="tel:+14082077458">
-        <img src="/static/icons/phone.svg" alt="phone" />
-      </a>
-    </td><td>
-      <a href="tel:+14082077458">
-        +1 (408) 207-7458
-      </a>
-    </td></tr>
-    <tr><td>
-      <a href="https://stackoverflow.com/users/2626001/swstephe">
-        <img src="/static/icons/stackoverflow.svg" alt="stackoverflow" />
-      </a>
-    </td><td>
-      <a href="https://stackoverflow.com/users/2626001/swstephe">
-        swstephe
-      </a>
-    </td></tr>
-    <tr><td>
-      <a href="https://www.github.com/swstephe">
-        <img src="/static/icons/github.svg" alt="github" />
-      </a>
-    </td><td>
-      <a href="https://www.github.com/swstephe">
-        swstephe
-      </a>
-    </td></tr>
-    <tr><td>
-      <a href="https://www.linkedin.com/in/swstephe">
-        <img src="/static/icons/linkedin.svg" alt="linkedin" />
-      </a>
-    </td><td>
-      <a href="https://www.linkedin.com/in/swstephe">
-        swstephe
-      </a>
-    </td></tr>
-
+    {% for link in site.data.social %}
+      <tr>
+        <td>
+          <a href="{{ link.link }}" title="{{ link.name }}">
+            <img src="{{ link.icon }}" alt="{{ link.name }}" />
+          </a>
+        </td>
+        <td>
+          <a href="{{ link.link }}" title="{{ link.name }}">
+            {{ link.text }}
+          </a>
+        </td>
+      </tr>
+    {% endfor %}
   </table>
 </div>

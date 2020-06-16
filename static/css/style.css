@@ -67,6 +67,34 @@ h5 span {
   color: #33c3F0;
 }
 
+footer {
+  margin-top: 20px;
+  background: #ccc;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  overflow: hidden;
+  line-height: 5rem;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-list li {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-section {
+  display: none;
+}
+
+
 @media (min-width: 750px) {
   .mobile-menu {
     display: none;
@@ -109,5 +137,9 @@ h5 span {
   }
   .has-docked-nav .navbar > .container {
     width: 80%;
+  }
+
+  .sidebar-section {
+    display: block;
   }
 }
