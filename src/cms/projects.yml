@@ -1,0 +1,50 @@
+- name: num
+  date: 2015-12-04
+  title: Generate Cardinal Numerals in several languages
+  summary: >
+    This is an old web app I created which writes out numbers
+    in several languages.
+- name: kitchen
+  date: 2016-01-05
+  title: Convert Angular Material to Pug/Coffee/Stylus
+  summary: >
+    I took the "Kitchen Sink" example from Angular Material website
+    and converted it to use Pug (Jade)/Coffeescript and Stylus.
+- name: uam
+  date: 2016-01-22
+  title: Convert Unraveling Angular Material to Pug/Coffee/Stylus
+  book: uam
+  summary: >
+    I took the examples from the book Unravelling Angular Material by Istvan Novak
+    and converted it to use Pug (Jade)/Coffeescript and Stylus.
+- name: ua
+  date: 2016-04-27
+  title: Convert Unravelling AngularJS 1.5 to Pug/Coffee/Stylus
+  book: ua
+  summary: >
+    I took the book Unraviling AngularJS 1.5 by Istvan Novak and rewrote the examples in Jade,
+    Coffeescript and Stylus as an extra challenge.
+- name: falcr
+  date: 2018-01-13
+  title: Python/Falcon example with Falcon/JWT/VuewJS
+  summary: >
+    I took the "falcr" example from the docs and converted it to use JWT authentication,
+    Google App Engine NDB and VueJS as a front end.
+- name: cm
+  date: 2018-02-25
+  title: Aurelia Contact Manager with Bottle/Aurelia/Bulma
+  summary: >
+    I created an example contact manager using Python Bottle for backend,
+    Aurelia as a framework and Bulma components on frontend.
+- name: algorithms
+  date: 2018-11-07
+  title: Algorithm Practice
+  summary: Just some examples writing various algorithms
+- name: py2jdbc
+  date: 2019-08-09
+  title: Python JDBC Connector
+  summary: >
+    I created a public component which allows Python programs to connect
+    to databases through JDBC drivers.
+  documentation: http://py2jdbc.readthedocs.org/
+  pypi: https://pypi.python.org/pypi/py2jdbc

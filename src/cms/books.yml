@@ -1,0 +1,12 @@
+authors:
+  - &istvan_novak
+    name: Istvan Novak
+    amazon: https://www.amazon.com/Istvan-Novak/e/B002VK5NWC/ref=aufs_dp_fta_dsk
+books:
+  ua:
+    title: Unraveling AngularJS 1.5
+    author: *istvan_novak
+    amazon: https://www.amazon.com/Unraveling-AngularJS-1-5-Complete-Samples/dp/1532916140/ref=sr_1_1?crid=37HGO7YEITVSV&keywords=unraveling+angularjs+1.5&qid=1664559909&s=digital-text&sprefix=unraveling+angularjs+1.5%2Cdigital-text%2C121&sr=1-1
+  uam:
+    title: Unraveling Angular Material
+    author: *istvan_novak

@@ -1,0 +1,16 @@
+#- name: phone
+#  icon: bx-phone
+#  link: "tel:+14082077458"
+#  text: "+1 (408) 207-7458"
+- name: stackoverflow
+  icon: bxl-stack-overflow
+  link: https://stackoverflow.com/users/2626001/swstephe
+  text: StackOverflow
+- name: github
+  icon: bxl-github
+  link: https://www.github.com/swstephe
+  text: Github
+- name: linkedin
+  icon: bxl-linkedin
+  link: https://www.linkedin.com/in/swstephe
+  text: LinkedIn
