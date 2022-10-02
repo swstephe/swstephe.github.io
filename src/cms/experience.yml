@@ -105,7 +105,8 @@
   summary: >
     Managed staff of 4. Created project proposals for Brunei government projects. Won 2009 BICTA special mention 2009
     APICTA. Python, jQuery, MySQL, Oracle databases. Google Maps, qgis, HTML, CSS, jQuery web front end. Mobile
-    web apps. GPS and AIS tracking apps.
+    web apps. GPS and AIS tracking apps.  Supported GIS application developed for TelBru, (Brunei Telecommunication).
+    Developed mobile application to view landline maps and information from NetMinister application.
 - title: Database Engineer
   consultant: true
   company: Siemens Pvt. Ltd.
@@ -117,8 +118,8 @@
   date1: 2003
   date2: 2006
   summary: >
-    Worked on “NetMinister” project to deploy Siemens GIS application to track phone landlines in Brunei. C++, Visual Basic
-    6, Oracle PL/SQL and SQL. Python utilities.
+    Worked on “NetMinister” project to deploy Siemens GIS application to track phone landlines in Brunei for TelBru,
+    (Brunei Telecommunication). C++, Visual Basic 6, Oracle PL/SQL and SQL. Python utilities.
 - title: Principal Technical Analyst
   consultant: false
   company: Oracle Corp.
