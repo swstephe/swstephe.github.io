@@ -1,11 +1,36 @@
-- title: Python Developer
+- title: 2021-2022	Senior Software Engineer		Premiere Digital Services
+  summary: >
+    Application managed movie and tv prices on streaming distribution retailers.  Upgraded main Python application to
+    Python3 and created Docker development environment.  Gave presentations on Python “clean coding” and best
+    practices.  Worked next iteration of application, using Serverless, AWS Lambda (nodeJS and Python), DynamoDB, S3,
+    SNS, SQS, MySQL RDS and Puppeteer for web scraping.  Created Docker development environment containers and
+    Bitbucket pipelines for automated quality checking and code deployments.
+- title: Consultant
+  company: Nuruq LLC/Celera Inc.
+  date1: 2021
+  date2: 2021
+  summary: >
+    Wrote circuit board logical chip diagrammer UI using Django/PostgresSQL/React/Material-UI/Axios and Konva.
+    UI allowed users to lay out logical diagram of chip inputs and outputs.  Nodes could be dragged around, with
+    routes (input/output lines) added and removed.
+- title: Senior Software Engineer
+  company: Experis IT/Akamai HQ
+  date1: 2020
+  date2: 2020
+  summary: >
+    Helped to develop new certificate rotation workflow REST service.  System is used to create or redeploy
+    certificates in bulk upon expiration or when compromised.  Used Python requests, OpenAPI/Swagger, Marshmallow
+    to interface to corporate backends.  Wrote extensive unit tests and mock servers for developer and QA testing.
+    Application used Flask and PostgreSQL database.  Agile and code reviews.
+- title: (Fullstack) Python Developer
   company: HireVergence LLC/Optiv/Starbucks HQ
   date1: 2019
   date2: 2020
   summary: >
-    Internal website interface on top of Illumio network security management API. Python Django to Flask, SQLite to MySQL
-    migration, Connexion, SQLAlchemy, Marshmallow OpenAPI REST API, React and Redux for front-end development.
-    Pytest, Jest, Jenkins, Docker CI/CD testing and deploment using Github Enterprise and Jira. Agile and code reviews.
+    Developed internal website interface on top of Illumio (network security management) API. Migrated Python Django
+    to Flask, SQLite to MySQL with database design.  Connexion, SQLAlchemy, Marshmallow OpenAPI REST API, React and
+    Redux Javascript front-end development.  Pytest, Jest, Jenkins, Docker CI/CD testing and deployment using Github
+    Enterprise and Jira.  Agile and code reviews.
 - title: Sr Software Engineer II
   company: Bank of the West
   date1: 2013
