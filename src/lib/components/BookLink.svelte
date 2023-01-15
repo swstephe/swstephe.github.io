@@ -4,7 +4,7 @@
 </script>
 
 {#if amazon}
-  <a href={amazon} target="_blank">
+  <a href={amazon} target="_blank" rel="noreferrer">
     <i class="bx bxl-amazon"></i>&nbsp;{text}
   </a>
 {:else}
