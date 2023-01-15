@@ -1,21 +1,26 @@
 <script lang="ts">
+  import type { CMSData } from '$lib/cms';
+  import { getContext } from 'svelte';
   import { page } from '$app/stores';
-  import { Page } from '../../cms';
 
-  export let pages: Page[];
-  let path;
+  const cms: CMSData = getContext('cms');
 
+  let path: string;
   $: path = $page.url.pathname;
 
-  function matchPath(url) {
-    return url === '/' ? path === '/' : path === url || path.startsWith(url);
-  }
+  const matchPath = (url: string): boolean => (
+    url === '/'
+      ? path === '/'
+      : path === url || path.startsWith(url)
+  );
 </script>
 
 <ul class="flex space-x-8 font-medium">
-  {#each pages as page}
+  {#each cms.pages as { url, title }}
     <li>
-      <a href={page.url} class:menu-link-active={matchPath(page.url)} class="menu-link-hover">{page.title}</a>
+      <a href={url}
+         class:menu-link-active={matchPath(url)}
+         class="menu-link-hover">{title}</a>
     </li>
   {/each}
 </ul>

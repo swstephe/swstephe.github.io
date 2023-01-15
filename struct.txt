@@ -1,0 +1,22 @@
+layout
+    LeftSide
+        UserBlock {info}
+            SocialBlock {social}
+        InfoBlock {info}
+        SkillsBlock {skills}
+            SkillTag skill=
+    RightSide {blurbs.about}
+        NavBar {pages}
+        <slot/>
+
+page
+    Location location=
+
+projects/page {projects}
+    Book book=
+        BookLink amazon= text=
+
+
+blog/page {blog}
+
+blog/[slog]/page {post}

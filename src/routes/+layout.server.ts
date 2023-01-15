@@ -1,4 +1,11 @@
-import type { ServerLoadEvent } from '@sveltejs/kit';
-import * as cms from '../cms';
+import type { CMSData } from '$lib/cms';
+import * as cms from '$lib/cms';
 
-export const load = (event: ServerLoadEvent) => cms.load(event.url.pathname);
+type LoadData = {
+  cms: CMSData;
+};
+
+export const load = async (): Promise<LoadData> => {
+  const data: CMSData = await cms.load();
+  return <LoadData>{ cms: data };
+};

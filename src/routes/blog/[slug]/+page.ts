@@ -1,12 +1,15 @@
+import type { BlogDocument } from '$lib/cms';
+import { loadPost } from '$lib/cms';
 import type { Load } from '@sveltejs/kit';
 
-export const load: Load = async ({ params}) => {
-  const post = await import(`../../../cms/posts/${params.slug}.md`);
-  const { title, date } = post.metadata;
-  const content = post.default;
-  return {
-    content,
-    title,
-    date
+type LoadType = {
+  post?: BlogDocument;
+}
+
+export const load: Load = async ({ params}): Promise<LoadType> => {
+  if (params.slug == null) {
+    return <LoadType>{};
   }
+  const post: BlogDocument = await loadPost(params.slug);
+  return <LoadType>{post};
 };

@@ -1,20 +1,20 @@
 <script lang="ts">
-  import type { Page, Social } from '../../cms';
+  import { getContext } from 'svelte';
+  import type { Blurb, CMSData } from '$lib/cms';
 
-  import AboutMeBlock from './AboutMeBlock.svx';
-  import SocialBlock from './SocialBlock.svelte';
   import NavBar from './NavBar.svelte';
 
-  export let pages: Page[];
+  const cms: CMSData = getContext('cms')
+  const about: Blurb = cms.blurbs.about;
 </script>
 
 <div class="space-y-5 lg:col-span-2">
   <div class="p-7 pb-0 block-section">
     <div class="mb-5 prose prose-slate dark:prose-invert">
-      <AboutMeBlock />
+      {@html about.content}
     </div>
     <div class="border-t border-gray-200 my-5"></div>
-    <NavBar pages={pages} />
+    <NavBar />
   </div>
   <slot />
 </div>

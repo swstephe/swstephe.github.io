@@ -1,21 +1,21 @@
 <script lang="ts">
-  import type { Social } from '../../cms';
+  import { getContext } from 'svelte';
+  import type { CMSData, Social } from '$lib/cms';
 
-  export let social: Social[];
+  const cms: CMSData = getContext('cms');
+  const social: Social[] = cms.social;
 </script>
 
 <div class="flex flex-col space-y-4">
   <ul class="flex space-x-5">
-    <li>
-      <a href="mailto:scott@nuruq.com" class="social-link social-link-hover">
-        <i class="bx bx-at text-xl"></i>
-        <span>scott@nuruq.com</span>
-      </a>
-    </li>
     {#each social as link}
       <li>
         <a href={link.link} class="social-link social-link-hover">
-          <i class={`bx ${link.icon} text-xl`}></i>
+          {#if link.name === 'email'}
+            <span>scott@nuruq.com</span>
+          {:else}
+            <i class={`bx ${link.icon} text-xl`}></i>
+          {/if}
         </a>
       </li>
     {/each}

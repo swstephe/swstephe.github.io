@@ -1,8 +1,10 @@
 <script lang="ts">
-  import type {Skill} from '../../cms';
+  import { getContext } from 'svelte';
+  import type {CMSData, Skill} from '$lib/cms';
   import SkillTag from './SkillTag.svelte';
 
-  export let skills: Skill[];
+  const cms: CMSData = getContext('cms');
+  const skills: Skill[] = cms.skills;
 </script>
 
 <div class="p-7 bg-white shadow rounded-xl flow-root">

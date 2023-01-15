@@ -1,0 +1,1 @@
+const e=async t=>await fetch(`http://localhost:8000/blog/${t}`).then(o=>o.json()),l=async({params:t})=>t.slug==null?{}:{post:await e(t.slug)},n=Object.freeze(Object.defineProperty({__proto__:null,load:l},Symbol.toStringTag,{value:"Module"}));export{n as _,l};

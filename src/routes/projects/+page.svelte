@@ -1,19 +1,26 @@
 <script lang="ts">
   import { getContext } from 'svelte';
   import dayjs from 'dayjs';
-  import Book from '../../lib/components/Book.svelte';
 
-  const cms = getContext('cms');
+  import type { CMSData, Project } from '$lib/cms';
+  import Book from '$lib/components/Book.svelte';
+
+  const cms: CMSData = getContext('cms');
+  const projects: Project[] = cms.projects;
 </script>
+
+<svelte:head>
+  <title>Scott Stephens | Projects</title>
+</svelte:head>
 
 <div class="p-7 block-section">
   <h2 class="block-title">Projects</h2>
   <div class="mb-5 item-section">
     <div class="w-full space-y-5">
-      {#each cms.projects as project}
+      {#each projects as project}
         <div class="item-header">
           <div class="space-y-1 5">
-            <a href={`https://github.com/swstephe/${project.name}`} target="_blank">
+            <a href={`https://github.com/swstephe/${project.name}`} target="_blank" rel="noreferrer">
               <div class="font-medium">
                 {project.name} &mdash; {project.title}
               </div>
