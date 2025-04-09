@@ -6,14 +6,15 @@
   import LeftSide from '$lib/components/LeftSide.svelte';
   import RightSide from '$lib/components/RightSide.svelte';
 
-  export let data;
+  let { children, data } = $props();
   const cms: CMSData = data.cms;
   setContext('cms', cms);
+
 </script>
 
 <svelte:head>
   <meta name="description" content="">
-  <meta name="author" content="Scott Stephens <scott@nuruq.com>">
+  <meta name="author" content="Scott Stephens <zahi.stephens@gmail.com>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css">
 </svelte:head>
@@ -22,7 +23,7 @@
   <div class="grid gap-5 lg:grid-cols-3">
     <LeftSide />
     <RightSide>
-      <slot />
+      {@render children()}
     </RightSide>
   </div>
 </main>
